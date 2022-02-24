@@ -5,9 +5,47 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/index.css">
 	<title>Hello world</title>
 </head>
 <body>
-Hello world
+	<header></header>
+
+	<main>
+		<div class="main-container">
+			<form class="message">
+				<textarea name="message-text" id="messageText">Stop the count!</textarea>
+				<div class="message-footer">
+					<div class="avatar message__avatar"></div>
+					<div class="submit_container">
+						<div class="countdown">
+							<div class="text">
+								125
+							</div>
+							<svg>
+								<circle class="bg" cx="26" cy="26" r="24"></circle>
+<!--								stroke-dashoffset 0%=150 100%=0 изменять закрашенность круга-->
+								<circle class="progress" cx="26" cy="26" r="24" stroke-dasharray='150' stroke-dashoffset='125'></circle>
+							</svg>
+						</div>
+
+						<input type="submit" class="button_submit">
+					</div>
+
+				</div>
+			</form>
+			<div class="feed"></div>
+		</div>
+
+		<div class="trends-container">
+			<div class="group"></div>
+			<div class="trends"></div>
+			<div class="follow"></div>
+
+		</div>
+	</main>
+
 </body>
 </html>
